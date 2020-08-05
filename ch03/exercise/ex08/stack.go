@@ -14,7 +14,7 @@ func main() {
 	push(&stack, 3)
 	push(&stack, 4)
 	pop(&stack)
-	fmt.Println(stack.elements)
+	toString(&stack)
 
 }
 
@@ -26,4 +26,10 @@ func push (stack *stack, value int) {
 func pop (stack *stack) {
 	stack.count--
 	stack.elements = stack.elements[:(stack.count)]
+}
+
+func toString(stack *stack) {
+	for k, v := range stack.elements {
+		fmt.Printf("[%d:%d]", k, v)
+	}
 }
