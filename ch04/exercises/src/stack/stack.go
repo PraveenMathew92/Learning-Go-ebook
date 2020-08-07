@@ -2,10 +2,10 @@ package stack
 
 type Stack struct {
 	count int
-	elements [] int
+	elements [] byte
 }
 
-func Push(stack *Stack, element int) {
+func Push(stack *Stack, element byte) {
 	stack.count++
 	stack.elements = append(stack.elements, element)
 }
