@@ -23,3 +23,9 @@ Once the GOPATH is set run
 ```
 go test stack
 ```
+
+To get a verbose output run 
+
+```
+go test -v stack
+```
