@@ -2,11 +2,10 @@ package main
 
 import (
 	"fmt"
-	"container/list"
 )
 
 func main() {
-	list := list.New()
+	list := new(List)
 	list.PushBack(1)
 	list.PushBack(4)
 	list.PushBack(5)
